@@ -45,13 +45,17 @@ GitHub is a cloud-based platform built around Git. It hosts your Git repositorie
 # 🌐 GitHub Workflow Example
 ## 1. Create Repo on GitHub
 ## 2. Clone the Repo to Local Machine
-`git clone https://github.com/yourname/repo.git`
-`cd repo`
+```
+git clone https://github.com/yourname/repo.git
+cd repo
+```
 ## 3. Work Locally
 - Edit files
 - Add & commit changes:
+```
   `git add .`
   `git commit -m "Initial commit"`
+```
 ## 4. Push to GitHub
 `git push origin main`
 
