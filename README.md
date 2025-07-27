@@ -72,5 +72,17 @@ git push -u origin new-feature
 - PR = Propose changes to be merged into main
 ## 8. Merge PR after review
 
+# 🔀 Branching Explained
+Why Branch?
+- Work on new features or fixes without affecting the main codebase.
+- Example:
+```
+git checkout -b login-feature
+# Do your work
+git add .
+git commit -m "Add login form"
+git checkout main
+git merge login-feature
+```
 
 
