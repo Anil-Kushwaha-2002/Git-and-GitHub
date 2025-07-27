@@ -53,10 +53,24 @@ cd repo
 - Edit files
 - Add & commit changes:
 ```
-  `git add .`
-  `git commit -m "Initial commit"`
+git add .
+git commit -m "Initial commit"
 ```
 ## 4. Push to GitHub
-`git push origin main`
+```
+git push origin main
+```
+## 5. Create Branch for New Feature
+```
+git checkout -b new-feature
+```
+## 6. Push New Branch
+```
+git push -u origin new-feature
+```
+## 7. Create Pull Request (PR) on GitHub
+- PR = Propose changes to be merged into main
+## 8. Merge PR after review
+
 
 
