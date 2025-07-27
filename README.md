@@ -6,7 +6,7 @@ Git is a distributed version control system that tracks changes in your codebase
 - Collaborate with others
 - Create different branches for features
 - Revert or fix bugs with ease
--💡 Version Control = A system that records changes to files over time.
+- 💡 Version Control = A system that records changes to files over time.
 
 # 🐙 What is GitHub?
 GitHub is a cloud-based platform built around Git. It hosts your Git repositories and adds collaboration features like:
@@ -45,4 +45,14 @@ GitHub is a cloud-based platform built around Git. It hosts your Git repositorie
 # 🌐 GitHub Workflow Example
 ## 1. Create Repo on GitHub
 ## 2. Clone the Repo to Local Machine
+`git clone https://github.com/yourname/repo.git`
+`cd repo`
+## 3. Work Locally
+- Edit files
+- Add & commit changes:
+  `git add .`
+  `git commit -m "Initial commit"`
+## 4. Push to GitHub
+`git push origin main`
+
 
