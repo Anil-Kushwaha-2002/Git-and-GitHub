@@ -1,0 +1,5 @@
+class about {
+    constructor(parameters) {
+        
+    }
+}
