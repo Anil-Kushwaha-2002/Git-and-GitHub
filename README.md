@@ -46,8 +46,20 @@ git config --global user.[ _ _ _ ]
 - Creates a new Git repository locally by adding a hidden .git folder.
 - `git init`
 
+🛠️ Basic Git Commands
+```
+# 1. Check status
+git status
 
+# 2. Stage Files
+git add index.html         # Add one file (index.html)
+git add .                  # Add all changed files
+git add -A                 # Add all (including deletions)
 
+# 3. Commit Changes
+git commit -m "Add index page"
+
+```
 # 📘 Common Git Commands (with Purpose)
 | Task                     | Command                                                |
 | ------------------------ | ------------------------------------------------------ |
