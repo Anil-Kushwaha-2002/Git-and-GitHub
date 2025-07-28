@@ -59,7 +59,55 @@ git add -A                 # Add all (including deletions)
 # 3. Commit Changes
 git commit -m "Add index page"
 
+# 4. Create a New File
+touch Contact.html               # Creates a blank file named Contact.html
+
+# 5. Undo Changes
+git checkout -- Contact.html     # Go to last change state (commit) / Discard local changes in Contact folder (not staged)
+git checkout -f                  # Discart local changes in all folder
+git reset HEAD Contact.html      # Remove staged file from Git (keep file)
+git clean -f                     # Force clean untracked files
+
+# 6. View Commit History
+git log                   # Full commit log (See all change)
+git log -p -5             # Last 5 commits with changes
+git log --oneline         # Compact summary
+
+# 7. Git Differences & Staging
+git diff               # Show differences between Working Directory and Staging Area (Helps you review what's changed before adding files.)
+git diff --staged      # Show / chack differences between Staging Area and Last Commit (Compares what's staged for the next commit vs what's already committed.)
+
+# 8. Branching in Git
+git branch                # View all branches / * indicates your current branch. / By default, it’s usually main or master.
+git branch feature-1      # Creates a new branch named feature-1.
+git checkout feature-1    # Switch to another branch feature-1
+git checkout -b feature-1 # Create and switch to a branch at once
+git merge feature-1       # Merge a branch into the current one
+# Make sure you're on the main/master branch before running this.
+
+# 9. Remote Repository (GitHub, GitLab, etc.)
+git remote add origin [URL]   # Add a remote repository (Adds a remote (URL) with the name origin.)
+git push origin main          # Push your branch to the remote (Pushes your main branch to GitHub / origin)
+
+
+
+
+
+
+
 ```
+🔄 Undo Changes
+```
+# 1. Discard local changes (not staged)
+git checkout -- Contact.html       # Go to last change state (commit)
+
+# 2. Remove staged file from Git (keep file)
+git reset HEAD Contact.html
+
+# 3. Force clean untracked files
+git clean -f
+
+
 # 📘 Common Git Commands (with Purpose)
 | Task                     | Command                                                |
 | ------------------------ | ------------------------------------------------------ |
