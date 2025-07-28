@@ -26,6 +26,28 @@ GitHub is a cloud-based platform built around Git. It hosts your Git repositorie
 | Local Repository  | `git commit -m "message"` | Commits the changes with a message             |
 | Remote Repository | `git push origin main`    | Uploads changes to GitHub (or any remote repo) |
 
+
+# 🌐 Git & GitHub Notes
+🧱 Initial Setup (Configuration)
+- Sets your global Git identity.  (--global applies these settings to all repositories on your system.)
+```
+git config --global user.name "Anil Kushwaha"
+git config --global user.email "your-email@example.com"
+git config --global user.[ _ _ _ ]
+```
+💻 Open Project in VS Code
+- Opens the current folder in Visual Studio Code
+`code .`
+
+🔗 Clone Repository (from GitHub to your local system)
+`git clone <repository-URL>`
+
+📦 Initialize Git in a New Project
+- Creates a new Git repository locally by adding a hidden .git folder.
+`git init`
+
+
+
 # 📘 Common Git Commands (with Purpose)
 | Task                     | Command                                                |
 | ------------------------ | ------------------------------------------------------ |
