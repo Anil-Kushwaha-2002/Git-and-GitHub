@@ -28,33 +28,33 @@ GitHub is a cloud-based platform built around Git. It hosts your Git repositorie
 
 
 # 🌐 Git & GitHub Notes
-🧱 Initial Setup (Configuration)
+## 🧱 Initial Setup (Configuration)
 - Sets your global Git identity.  (--global applies these settings to all repositories on your system.)
 ```
 git config --global user.name "Anil Kushwaha"
 git config --global user.email "your-email@example.com"
 git config --global user.[ _ _ _ ]
 ```
-💻 Open Project in VS Code
+## 💻 Open Project in VS Code
 - Opens the current folder in Visual Studio Code
 - `code .`
 
-🔗 Clone Repository (from GitHub to your local system)
+## 🔗 Clone Repository (from GitHub to your local system)
 - `git clone <repository-URL>`
 
-📦 Initialize Git in a New Project
+## 📦 Initialize Git in a New Project
 - Creates a new Git repository locally by adding a hidden .git folder.
 - `git init`
 
-🛠️ Basic Git Commands
+# 🛠️ Basic Git Commands
 ```
 # 1. Check status
 git status
 
 # 2. Stage Files
-git add index.html         # Add one file (index.html)
-git add .                  # Add all changed files
-git add -A                 # Add all (including deletions)
+git add index.html               # Add one file (index.html)
+git add .                        # Add all changed files
+git add -A                       # Add all (including deletions)
 
 # 3. Commit Changes
 git commit -m "Add index page"
@@ -69,44 +69,33 @@ git reset HEAD Contact.html      # Remove staged file from Git (keep file)
 git clean -f                     # Force clean untracked files
 
 # 6. View Commit History
-git log                   # Full commit log (See all change)
-git log -p -5             # Last 5 commits with changes
-git log --oneline         # Compact summary
+git log                          # Full commit log (See all change)
+git log -p -5                    # Last 5 commits with changes
+git log --oneline                # Compact summary
 
 # 7. Git Differences & Staging
-git diff               # Show differences between Working Directory and Staging Area (Helps you review what's changed before adding files.)
-git diff --staged      # Show / chack differences between Staging Area and Last Commit (Compares what's staged for the next commit vs what's already committed.)
+git diff                        # Show differences between Working Directory and Staging Area (Helps you review what's changed before adding files.)
+git diff --staged               # Show / chack differences between Staging Area and Last Commit (Compares what's staged for the next commit vs what's already committed.)
 
 # 8. Branching in Git
-git branch                # View all branches / * indicates your current branch. / By default, it’s usually main or master.
-git branch feature-1      # Creates a new branch named feature-1.
-git checkout feature-1    # Switch to another branch feature-1
-git checkout -b feature-1 # Create and switch to a branch at once
-git merge feature-1       # Merge a branch into the current one
+- Branch:- Work on new features or fixes without affecting the main codebase.
+git branch                      # View all branches / * indicates your current branch. / By default, it’s usually main or master.
+git branch feature-1            # Creates a new branch named feature-1.
+git checkout feature-1          # Switch to another branch feature-1
+git checkout -b feature-1       # Create and switch to a branch at once
+git merge feature-1             # Merge a branch into the current one
 # Make sure you're on the main/master branch before running this.
 
-# 9. Remote Repository (GitHub, GitLab, etc.)
-git remote add origin [URL]   # Add a remote repository (Adds a remote (URL) with the name origin.)
-git push origin main          # Push your branch to the remote (Pushes your main branch to GitHub / origin)
+# 9. Switch to branch
+git switch feature-1            # Switch to another branch feature-1
+git checkout feature-1          #  "     "     "
 
-
-
-
-
-
-
+# 10. Push to GitHub (Remote Repository (GitHub, GitLab, etc.))
+git remote add origin [URL]     # Add a remote repository (Adds a remote (URL) with the name origin.)
+git push origin main            # Push your branch to the remote (Pushes your main branch to GitHub / origin)
+git push origin feature-1       # Pushes your feature-1 branch
+git push -u origin feature-1
 ```
-🔄 Undo Changes
-```
-# 1. Discard local changes (not staged)
-git checkout -- Contact.html       # Go to last change state (commit)
-
-# 2. Remove staged file from Git (keep file)
-git reset HEAD Contact.html
-
-# 3. Force clean untracked files
-git clean -f
-
 
 # 📘 Common Git Commands (with Purpose)
 | Task                     | Command                                                |
@@ -126,45 +115,29 @@ git clean -f
 
 # 🌐 GitHub Workflow Example
 ## 1. Create Repo on GitHub
-## 2. Clone the Repo to Local Machine
-```
-git clone https://github.com/yourname/repo.git
-cd repo
-```
-## 3. Work Locally
+## 2. Work Locally
 - Edit files
 - Add & commit changes:
 ```
 git add .
 git commit -m "Initial commit"
 ```
-## 4. Push to GitHub
+## 3. Push to GitHub
 ```
 git push origin main
 ```
-## 5. Create Branch for New Feature
+## 4. Create Branch for New Feature-1
 ```
-git checkout -b new-feature
+git checkout -b feature-1
 ```
-## 6. Push New Branch
+## 5. Push New Branch
 ```
-git push -u origin new-feature
+git push origin feature-1
+git push -u origin feature-1
 ```
-## 7. Create Pull Request (PR) on GitHub
+## 6. Create Pull Request (PR) on GitHub
 - PR = Propose changes to be merged into main
-## 8. Merge PR after review
+## 7. Merge PR after review
 
-# 🔀 Branching Explained
-Why Branch?
-- Work on new features or fixes without affecting the main codebase.
-- Example:
-```
-git checkout -b login-feature
-# Do your work
-git add .
-git commit -m "Add login form"
-git checkout main
-git merge login-feature
-```
 
 
