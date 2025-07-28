@@ -37,14 +37,14 @@ git config --global user.[ _ _ _ ]
 ```
 💻 Open Project in VS Code
 - Opens the current folder in Visual Studio Code
-`code .`
+- `code .`
 
 🔗 Clone Repository (from GitHub to your local system)
-`git clone <repository-URL>`
+- `git clone <repository-URL>`
 
 📦 Initialize Git in a New Project
 - Creates a new Git repository locally by adding a hidden .git folder.
-`git init`
+- `git init`
 
 
 
