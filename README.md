@@ -155,4 +155,19 @@ git push -u origin feature-1
 - ☁️ Cloud backup & CI/CD integrations
 - 🐛 Helps with issue tracking & code reviews
 
-
+## 8. Git commands you have already used
+```
+Command	                    Purpose
+git --version               Version
+git clone URL	              Download an existing repository
+git status	                Check changed, staged, and untracked files
+git add .	                  Stage all changes in the current directory
+git add filename	          Stage a specific file
+git commit -m "message"	    Save staged changes in a local commit
+git push origin main	      Upload the local main branch to GitHub
+git branch	                List local branches
+git branch main-2	          Create a branch named main-2
+git checkout main-2	        Switch to the main-2 branch
+git config --global user.email "email"	   Set your Git commit email globally
+git --help	                Display Git's help information
+```
